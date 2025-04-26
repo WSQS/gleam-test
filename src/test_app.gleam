@@ -5,5 +5,5 @@ fn hello() -> Int
 
 pub fn main() {
   io.println("Hello from test_app!")
-  echo hello()
+  hello()
 }
