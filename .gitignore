@@ -1,5 +1,6 @@
 *.beam
 *.ez
+*.so
 /build
 erl_crash.dump
 .cache
