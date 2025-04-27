@@ -6,7 +6,7 @@ inline void report_assertion_failure(const char *expr, const char *file,
 }
 
 #define ASSERT(expr)                                                           \
-  if (!expr) {                                                                 \
+  if (!(expr)) {                                                                 \
     report_assertion_failure(#expr, __FILE__, __LINE__);                       \
     __builtin_trap();                                                          \
   }
